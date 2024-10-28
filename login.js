@@ -5,5 +5,5 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('password').value;
     sessionStorage.setItem('username', username);
     
-    window.location.href = 'upload.html';
+    window.location.href = 'details.html';
 });
