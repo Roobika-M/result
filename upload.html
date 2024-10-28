@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Box Example</title>
-    <link rel="stylesheet" href="stylesup.css">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome {{username}}</h1>
-    <h3>Upload your file</h3>
-    <form action="upload_file.php" method="POST" enctype="multipart/form-data">
-        <label for="fileUpload">Choose an Excel file (.xlsx):</label>
-        <input type="file" id="fileUpload" name="fileUpload" accept=".xlsx" required>
-        <button type="submit">Upload</button>
-    </form>
+    <div class="form-container">
+        <h1>Welcome, <span id="usernameDisplay"></span></h1>
+        <h3>Upload a File</h3>
+        <form id="uploadForm">
+            <label for="fileUpload">Choose a file:</label>
+            <input type="file" id="fileUpload" name="fileUpload" required>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+    <script src="upload.js"></script>
 </body>
+</html>
