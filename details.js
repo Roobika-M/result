@@ -1,6 +1,14 @@
+
+const username = sessionStorage.getItem('username');
+
+if (username) {
+    document.getElementById('usernameDisplay').textContent = username;
+} else {
+    alert('Please log in first!');
+    window.location.href = 'login.html';
+}
+
 document.getElementById('submitButton').addEventListener('click', function() {
-    // Here you can add any validation or data processing if needed
-    
-    // Redirect to upload.html
-    window.location.href = 'upload.html';
+    window.location.href = 'upload.html'; 
 });
+
