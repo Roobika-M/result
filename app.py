@@ -13,7 +13,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 # Route to render the upload form
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('login.html')
 
 # Route to handle the file upload
 @app.route('/upload', methods=['POST'])
